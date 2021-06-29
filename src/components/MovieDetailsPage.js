@@ -60,7 +60,7 @@ class MovieDetailsPage extends Component {
                 
                 <section className={styles.MainInfo}>
                     <div className={styles.ImageThumb}>
-                        <img src={`${baseImgUrl}/w300${poster_path}`} alt="" />
+                        {poster_path?<img src={`${baseImgUrl}/w300${poster_path}`} alt="" />:<p>Picture is not found</p>}
                     </div>
                     <div className={styles.MovieInfo}>
                         <h1 className={styles.MovieInfoChild}>{title}</h1>

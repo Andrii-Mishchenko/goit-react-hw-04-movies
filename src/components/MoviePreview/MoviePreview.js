@@ -22,7 +22,7 @@ const MoviePreview = ({ poster_path, title, vote_average, release_date }) => (
 MoviePreview.propTypes = { 
     poster_path: PropTypes.string.isRequired,    
     title: PropTypes.string.isRequired,    
-    vote_average: PropTypes.string.isRequired,    
+    vote_average: PropTypes.number.isRequired,    
     release_date: PropTypes.string.isRequired,    
 }
 

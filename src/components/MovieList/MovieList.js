@@ -30,7 +30,7 @@ const MovieList = ({movies, location}) => {
 
 MovieList.propTypes = {
     movies: PropTypes.array.isRequired,    
-    location: PropTypes.string.isRequired,    
+    location: PropTypes.object.isRequired,    
 }
 
 export default withRouter(MovieList);
